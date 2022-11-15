@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="shortcut icon" href="../multimedia/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Provincias</a></li>
+                <li><a href="./paquetes.html">Paquetes</a></li>
+                <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="">
+            <div>
+                <img src="../multimedia/mapa.jpg" width="500px" alt="">
+            </div>
+            <fieldset class="formulario">
+                <legend>
+                    Datos personales
+                </legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="name" placeholder="Claudia">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text"name="surname" placeholder="Torres">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email"name="email" required placeholder="clautorres@gmail.com"> 
+                </div>
+                <div>
+                    <label for="destino">Destino</label>
+                    <select name="destino" id="">
+                        <option value="juj">Jujuy</option>
+                        <option value="sal">Salta</option>
+                        <option value="for">Formosa</option>
+                        <option value="tuc">Tucuman</option>
+                        <option value="cha">Chaco</option>
+                        <option value="san">Santiago del Estero</option>
+                        <option value="cat">Catamarca</option>
+                        <option value="cor">Corrientes</option>
+                        <option value="sta">Santa Fe</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <label for="comentario">Consulta</label>
+                    </div>
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar datos">
+                    <input type="reset" value="Borrar datos">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <img src="../multimedia/argentina logo.png" alt="" width="400px">
+        </div>
+        <div>
+            <h1>
+                Redes
+            </h1>
+            <img src="../multimedia/redes.png" alt="" width="250px">
+        </div>
+    </footer>
+</body>
+</html>
