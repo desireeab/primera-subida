@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="../multimedia/favicon.ico">
 </head>
@@ -21,63 +24,81 @@
         </nav>
     </header>
     <main>
-        <form action="">
-            <div>
-                <img src="../multimedia/mapa.jpg" width="500px" alt="">
+        <div class="container text-center">
+            <div class="row mapa">
+              <div class="col col-lg-8 col-xs-12">
+                <img src="../multimedia/mapa.jpg" alt="">
+              </div>
+              <div class="formulario col col-lg-4 col-xs-12">
+                <form action="">
+                    <fieldset >
+                        <legend>
+                            Datos personales
+                        </legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="name" placeholder="Claudia">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text"name="surname" placeholder="Torres">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email"name="email" required placeholder="clautorres@gmail.com"> 
+                        </div>
+                        <div>
+                            <label for="destino">Destino</label>
+                            <select name="destino" id="">
+                                <option value="juj">Jujuy</option>
+                                <option value="sal">Salta</option>
+                                <option value="for">Formosa</option>
+                                <option value="tuc">Tucuman</option>
+                                <option value="cha">Chaco</option>
+                                <option value="san">Santiago del Estero</option>
+                                <option value="cat">Catamarca</option>
+                                <option value="cor">Corrientes</option>
+                                <option value="sta">Santa Fe</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="comentario">Consulta</label>
+                            </div>
+                            <textarea name="comentario" id="" cols="30" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="Enviar datos">
+                            <input type="reset" value="Borrar datos">
+                        </div>
+                    </fieldset>
+                </form>
+              </div>
             </div>
-            <fieldset class="formulario">
-                <legend>
-                    Datos personales
-                </legend>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="name" placeholder="Claudia">
-                </div>
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text"name="surname" placeholder="Torres">
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email"name="email" required placeholder="clautorres@gmail.com"> 
-                </div>
-                <div>
-                    <label for="destino">Destino</label>
-                    <select name="destino" id="">
-                        <option value="juj">Jujuy</option>
-                        <option value="sal">Salta</option>
-                        <option value="for">Formosa</option>
-                        <option value="tuc">Tucuman</option>
-                        <option value="cha">Chaco</option>
-                        <option value="san">Santiago del Estero</option>
-                        <option value="cat">Catamarca</option>
-                        <option value="cor">Corrientes</option>
-                        <option value="sta">Santa Fe</option>
-                    </select>
-                </div>
-                <div>
-                    <div>
-                        <label for="comentario">Consulta</label>
-                    </div>
-                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar datos">
-                    <input type="reset" value="Borrar datos">
-                </div>
-            </fieldset>
-        </form>
+        </div>
+        
+        
     </main>
     <footer>
+        <div class="container text-center">
+            <div class="row">
+              <div class="col">
+                <img src="../multimedia/argentina logo.png" alt="" width="400px">
+              </div>
+              <div class="col ">
+                <h1>
+                    Redes
+                </h1>
+                <img src="../multimedia/redes.png" alt="" width="250px">
+              </div>
+            </div>
         <div>
-            <img src="../multimedia/argentina logo.png" alt="" width="400px">
-        </div>
-        <div>
-            <h1>
-                Redes
-            </h1>
-            <img src="../multimedia/redes.png" alt="" width="250px">
-        </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

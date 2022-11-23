@@ -1,5 +1,5 @@
 *{
-   margin: 2px;
+   margin: 0px;
    padding: 0;
    box-sizing: border-box;
 }
@@ -48,12 +48,12 @@ body{
     margin: 50px;
 }
 .provincias{
-    display: inline-block;
-    padding: 20px;
-    margin: auto;
-    text-align: left;
     font-size: medium;
     color: black;
+}
+.provincias img{
+    width: 300px;
+    height: 300px;
 }
 .paquetes{
     width: 350px;
@@ -76,14 +76,12 @@ body{
     text-align: center;
     margin-top: 5px;
 }
+.mapa img{
+    width: 100%;
+}
 .formulario{
-    width: 400px;
-    padding: 10px;
 }
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     margin-top: 30px;
     color: rgb(75, 124, 75);
 }
